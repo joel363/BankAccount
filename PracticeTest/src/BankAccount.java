@@ -26,6 +26,19 @@ public class BankAccount {
 		System.out.println("Amount deposited successfully");
 	}
 	
+	void Withdraw(float x)
+	{
+		if (x>5000)
+		{
+			System.out.println("Maximum withdrawal limit is 5000/-");
+		}
+		else
+		{
+			available_balance-=x;
+			System.out.println("Withdrawal successful");
+		}
+	}
+	
 	void displayDetails()
 	{
 		System.out.println("Account holder name: "+Account_holder_name);
